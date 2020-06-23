@@ -120,7 +120,79 @@
 
 //TASK 18
 
-var temp = "The quick brown fox jumps over the lazy dog”.";
-temp2=temp.toLowerCase()
-var count = (temp2.match(/the/g) || []).length;
-document.write(count);
+// var temp = "The quick brown fox jumps over the lazy dog”.";
+// temp2=temp.toLowerCase()
+// var count = (temp2.match(/the/g) || []).length;
+// document.write(count);
+
+
+// CHAPTER 26 TO 30
+
+
+// TASK 1
+
+// var num=prompt("Enter positive integer","e.g: 3.45214")
+// document.write("number: "+num+"<br>")
+// var numr=Math.round(num)
+// document.write("round off value: "+numr+"<br>")
+// var numf=Math.floor(num)
+// document.write("floor value: "+numf+"<br>")
+// var numc=Math.ceil(num)
+// document.write("ceil value: "+numc+"<br>")
+
+//TASK 2
+
+// var num=prompt("Enter negative integer","e.g: -2.673")
+// document.write("number: "+num+"<br>")
+// var numr=Math.round(num)
+// document.write("round off value: "+numr+"<br>")
+// var numf=Math.floor(num)
+// document.write("floor value: "+numf+"<br>")
+// var numc=Math.ceil(num)
+// document.write("ceil value: "+numc+"<br>")
+
+//TASK 3
+
+// var num=prompt("Enter positive or negative integer")
+// var numr=Math.abs(num)
+// document.write("The absolute value of: "+num+" is "+numr)
+
+//TASK 4
+
+// var num=Math.random()*6
+// var numc=Math.ceil(num)
+// document.write("random dice value: "+numc)
+
+//TASK 5
+
+// var toss=Math.random()*2
+// var numc=Math.ceil(toss)
+// if(numc===2){
+//     document.write(numc+"<br>"+"random coin value: Heads")
+// }
+// else{
+//     document.write(numc+"<br>"+"random coin value: Tails")
+// }
+
+//TASK 6
+
+// var number=Math.random()*100
+// var numc=Math.ceil(number)
+// document.write("Random number between 1 and 100: "+numc)
+
+//TASK 7
+
+// var wgt=prompt("Enter your weight in kilograms")
+// var wgtr=parseFloat(wgt)
+// document.write("The weight of user is "+wgtr+" kilograms")
+
+//TASK 8
+
+// var secretnum=7
+// var num=+prompt("Enter a number between 1 to 10")
+// if(num===secretnum){
+//     alert("Congratulations! You are correct")
+// }
+// else{
+//     alert("Try again!")
+// }
