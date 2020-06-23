@@ -60,3 +60,67 @@
 // document.write("Value : "+str+"<br>Type : String<br>")
 // Number(str)
 // document.write("Value : "+str+"<br>Type : Number")
+
+//TASK 10
+
+// var p=prompt("Input in lower case");
+// var p2=p.toUpperCase()
+// document.write("User input: "+ p + "<br>")
+// document.write("Upper Case: "+ p2)
+
+//TASK 11
+
+// var p=prompt("Input in lower case")
+// document.write("User Input: "+p+"<br>")
+// var p2=p.slice(0,1)
+// p2=p2.toUpperCase()
+// var p3=p.slice(1)
+// p3=p3.toLowerCase()
+
+// p=p2+p3
+// document.write("Title Case: "+p)
+
+//TASK 12
+
+// var num=35.36;
+// var str=num.toString()
+// var str=str.replace(".","")
+// document.write(str)
+
+//TASK 13
+
+//TASK 14
+
+// A = ["cake", "apple pie", "cookie", "chips", "patties"]
+// var B=prompt("Enter to find avaliablity")
+// C=B.toLowerCase()
+// if(C === "cake" ,C==="apple pie" ,C==="cookie" ,C==="chips" ,C==="patties"){
+//     alert("Item is found")
+// }
+// else{
+//     alert("Item Not Found")
+// }
+
+//TASK 15
+
+
+
+//TASK 16
+
+// var university = "University of Karachi";
+// var res = university.split("");
+// document.write(res)
+
+//TASK 17
+
+// var a=prompt("Enter")
+// var b = a.charAt(a.length - 1)
+// document.write("User input: "+a+"<br>")
+// document.write("Last Character of input: "+b)
+
+//TASK 18
+
+var temp = "The quick brown fox jumps over the lazy dog”.";
+temp2=temp.toLowerCase()
+var count = (temp2.match(/the/g) || []).length;
+document.write(count);
