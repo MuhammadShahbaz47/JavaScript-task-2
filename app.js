@@ -196,3 +196,141 @@
 // else{
 //     alert("Try again!")
 // }
+
+//CHAPTER 31 TO 34
+
+//TASK 1
+
+// var dt=new Date();
+// document.write(dt)
+
+//TASK 2
+
+// var months=["January","Feburary","March","april","May","June","July","August","September","October","November","December"]
+// var dte=new Date();
+// var mnth=dte.getMonth();
+// var monthinwords=months[mnth]
+// alert("Current Month: ",monthinwords)
+
+//TASK 3
+
+// var daynames=["Sun","Mon","Tue","Wed","Fri","Sat"]
+// var now=new Date();
+// var getDay=now.getDay();
+// var nameOfToday=daynames[getDay]
+// alert("Today is "+nameOfToday)
+
+//TASK 4
+
+// var daynames=["Fun day","Monday","Tuesday","Wednesday","Friday","Fun day"]
+// var now=new Date();
+// var getDay=now.getDay();
+// var nameOfToday=daynames[getDay]
+// alert("It's "+nameOfToday)
+
+//TASK 5
+
+// var date=new Date()
+// var Today=date.getDate()
+// if(Today < 16){
+//     alert("First fifteen days of the month")
+// }
+// else{
+//     alert("Last days of the month")
+// }
+
+//TASK 6
+
+// var date=new Date()
+// document.write("Current Date: "+date+"<br>")
+// var milisince=date.getTime();
+// document.write("Elapsed miliseconds since January 1,1970: "+milisince+"<br>")
+// var minsince=milisince/(1000*60)
+// document.write("Elapsed minutes since January 1,1970: "+minsince)
+
+//TASK 7
+
+// var date=new Date()
+// var Todayhour=date.getHours()
+// if(Todayhour < 13){
+//     alert("It's AM")
+// }
+// else{
+//     alert("It's PM")
+// }
+
+//TASK 8
+
+// var laterDate=new Date("Thu ,Dec 31 2020")
+// document.write(laterDate)
+
+//TASK 9
+
+// var r=new Date("June 18,2015")
+// var rmilli=r.getTime()
+// var today=new Date()
+// var todaymilli=today.getTime()
+// var diff=todaymilli-rmilli
+// var diffdays=diff/(1000*60*60*24)
+// var sinceramadan=Math.floor(diffdays)
+// document.write(sinceramadan+" days have passed since 1st Ramadan,2015")
+
+//TASK 10
+
+// var r=new Date("Sat Dec 05,2015 22:50:16")
+// var rmilli=r.getTime()
+// var bg=new Date("Jan,1 2015")
+// var bgmilli=bg.getTime()
+// var diff=rmilli-bgmilli
+// var diffsec=diff/(1000)
+// var passedsec=Math.floor(diffsec)
+// document.write("On reference Date "+r+"<br>"+passedsec+" seconds had passed since beginning of 2015")
+
+
+//TASK 11
+
+// var d=new Date();
+// document.write("Current date:"+d+"<br>")
+// var dt = new Date();
+// dt.setHours( dt.getHours() - 1 );
+// document.write("1 hour ago, it was "+dt );
+
+//TASK 12
+
+// var d=new Date();
+// document.write("Current date:"+d+"<br>")
+// var dt = new Date();
+// dt.setFullYear( dt.getFullYear() - 100 );
+// document.write("100 years back, it was "+dt );
+
+//TASK 13
+
+// var age=+prompt("Your Age")
+// document.write("Your age is "+age+"<br>")
+// var date=new Date()
+// var year=date.getFullYear()
+// var Birthyear=year-age;
+// document.write("Your birth year is "+Birthyear)
+
+//TASK 14
+
+document.write("K-Electric Bill<br><br><br>")
+document.write("Customer Name:ABC Customer<br>")
+var months=["January","Feburary","March","april","May","June","July","August","September","October","November","December"]
+var date=new Date()
+var month=date.getMonth()
+document.write("Month: "+months[month]+"<br>")
+var NoOfUnits=410;
+document.write("Number of units:"+NoOfUnits+"<br>")
+var ChPerUnits=16;
+document.write("Charges per units:"+ChPerUnits+"<br><br>")
+var Netamnt=NoOfUnits*ChPerUnits;
+document.write("Net Amount Payable (within Due Date): "+Netamnt+"<br>")
+var LatePay=350
+document.write("Late Payment surcharge: "+LatePay+"<br>")
+var GrssAmnt=Netamnt+LatePay;
+document.write("Gross Amount Payable (after Due Date): "+GrssAmnt)
+
+
+
+
