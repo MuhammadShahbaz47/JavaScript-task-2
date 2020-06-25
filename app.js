@@ -4,8 +4,8 @@
 
 // var firstname=prompt("Enter first name")
 // var lastname=prompt("Enter Last name")
-// var fullName=firstame+lastname;
-// alert("Greetings "+fullName)
+// var fullname=firstname.concat(lastname)
+// alert("Greetings "+ fullname)
 
 // TASK 2
 
@@ -314,23 +314,195 @@
 
 //TASK 14
 
-document.write("K-Electric Bill<br><br><br>")
-document.write("Customer Name:ABC Customer<br>")
-var months=["January","Feburary","March","april","May","June","July","August","September","October","November","December"]
-var date=new Date()
-var month=date.getMonth()
-document.write("Month: "+months[month]+"<br>")
-var NoOfUnits=410;
-document.write("Number of units:"+NoOfUnits+"<br>")
-var ChPerUnits=16;
-document.write("Charges per units:"+ChPerUnits+"<br><br>")
-var Netamnt=NoOfUnits*ChPerUnits;
-document.write("Net Amount Payable (within Due Date): "+Netamnt+"<br>")
-var LatePay=350
-document.write("Late Payment surcharge: "+LatePay+"<br>")
-var GrssAmnt=Netamnt+LatePay;
-document.write("Gross Amount Payable (after Due Date): "+GrssAmnt)
+// document.write("K-Electric Bill<br><br><br>")
+// document.write("Customer Name:ABC Customer<br>")
+// var months=["January","Feburary","March","april","May","June","July","August","September","October","November","December"]
+// var date=new Date()
+// var month=date.getMonth()
+// document.write("Month: "+months[month]+"<br>")
+// var NoOfUnits=410;
+// document.write("Number of units:"+NoOfUnits+"<br>")
+// var ChPerUnits=16;
+// document.write("Charges per units:"+ChPerUnits+"<br><br>")
+// var Netamnt=NoOfUnits*ChPerUnits;
+// document.write("Net Amount Payable (within Due Date): "+Netamnt+"<br>")
+// var LatePay=350
+// document.write("Late Payment surcharge: "+LatePay+"<br>")
+// var GrssAmnt=Netamnt+LatePay;
+// document.write("Gross Amount Payable (after Due Date): "+GrssAmnt)
+
+//CHAPTER 35 TO 38
+
+//TASK 1
+
+// function date(){
+// var date=new Date()
+// document.write(date)
+// }
+
+// date();
+
+//TASK 2
+
+// function Greetings(){
+// var firstname=prompt("Enter first name")
+// var lastname=prompt("Enter Last name")
+// var fullname=firstname.concat(lastname)
+// alert("Greetings "+ fullname)
+// }
+
+// Greetings();
+
+//TASK 3
+
+// function add(){
+//     var a=+prompt("First Number")
+//     var b=+prompt("Second Number")
+//     return z=a+b;
+// }
+
+// var result=add();
+// document.write(result)
+
+//TASK 4
+
+// function calc(num1,opr,num2){
+//     if(opr==="+"){
+//         return num1+num2;
+//     }
+//     else if(opr==="-"){
+//         return num1-num2
+//     }
+//     else if(opr==="*"){
+//         return num1*num2
+//     }
+//     else{
+//         return "invalid operator!"
+//     }
+// }
+// var result=calc(2,"+",4)
+// alert(result)
+
+//TASK 5
+
+// function sqr(num){
+//     return num*2;
+// }
+
+// var result=sqr(2);
+// alert(result)
+
+//TASK 6
+
+// function factorial(n){
+//     let answer = 1;
+//     if (n == 0 || n == 1){
+//       return answer;
+//     }else{
+//       for(var i = n; i >= 1; i--){
+//         answer = answer * i;
+//       }
+//       return answer;
+//     }  
+//   }
+//   let n = 4;
+//   answer = factorial(n)
+//   document.write("The factorial of " + n + " is " + answer);
+
+//TASK 7
+
+// function count(){
+// var a=+prompt("Counting starts from")
+// var b=+prompt("counting end at")
+//     for(var i=a;i<=b;i++){
+//         document.write(i,"<br>")
+//     }
+// }
+// var result=count()
+
+//TASK 8
+
+// function hyp(){
+//     var a=+prompt("Base")
+//     var b=+prompt("perp")
+//     document.write(Math.hypot(a,b));
+// }
+// hyp();
+
+//TASK 9
+
+// function area(){
+//     return width*height;
+
+// }
+// var result=area(width=2,height=2)
+// document.write(result)
+
+//TASK 10
+
+// function isPalindrome(s) {
+//     return s == s.split("").reverse().join("");
+// }
+
+// alert(isPalindrome("madam")); 
+// alert(isPalindrome("english")); 
+
+//TASK 11
+
+// function titleCase(string) {
+//     var sentence = string.toLowerCase().split(" ");
+//     for(var i = 0; i< sentence.length; i++){
+//        sentence[i] = sentence[i][0].toUpperCase() + sentence[i].slice(1);
+//     }
+//  document.write(sentence.join(" "));
+//  return sentence;
+//  }
+//  titleCase("tutorix is one of best e-platforms");
+
+//TASK 12
+
+// function find_longest_word(str)
+// {
+//   var array1 = str.match(/\w[a-z]{0,}/gi);
+//   var result = array1[0];
+
+//   for(var x = 1 ; x < array1.length ; x++)
+//   {
+//     if(result.length < array1[x].length)
+//     {
+//     result = array1[x];
+//     } 
+//   }
+//   return result;
+// }
+// document.write("EXAMPLE STRING : Web Development Tutorial<br>EXPECTED OUTPUT : ")
+// document.write(find_longest_word('Web Development Tutorial'));
+
+//TASK 13
+
+// function counter(txt,Cr){
+//     count=0;
+//     for(var i=0;i<txt.length;i++){
+//         if(txt.charAt(i)===Cr){
+//             count++;
+//         }
+//     }
+//     return count;
+// }
+// document.write(counter("JSResourceS.com","o"))
+
+//TASK 14
+
+// function calcCircumference(radius){
+//     var result=2*3.142*radius
+//     return result
+// }
+
+// document.write(calcCircumference(3))
 
 
-
-
+// function calcArea(radius){
+//     var result=3.142*(radius)*2
+//     return result
+// }
+// document.write(calcArea(2))
